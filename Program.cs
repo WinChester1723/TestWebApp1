@@ -11,7 +11,6 @@ namespace TestWebApp1
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-            //builder.Services.AddRazorPages().AddRazorRuntimeCompilation();//this line need learn, please dont forget
             builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
                 builder.Configuration.GetConnectionString("DefaultConnection")
                 ));
